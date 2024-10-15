@@ -8,11 +8,11 @@ API_SECRET = '9410d476c49cb45ee50fa92aa6f542d5'
 # Add this if you have a project ID, otherwise leave as is
 PROJECT_ID = 'YOUR_PROJECT_ID'
 
-# Set start date to August 1, 2023, at 00:00 hours UTC
-start_date = datetime(2023, 8, 1, 0, 0, 0, tzinfo=timezone.utc)
+# Set start date to januari 1, 2024, at 00:01 hours UTC
+start_date = datetime(2024, 8, 1, 0, 0, 1, tzinfo=timezone.utc)
 
-# Set end date to today at 00:00 UTC
-end_date = datetime(2024, 1, 1, 0, 0, 0, tzinfo=timezone.utc)
+# Set end date to august 1 20204 at 00:00 UTC
+end_date = datetime(2024, 8, 1, 0, 0, 0, tzinfo=timezone.utc)
 
 # Prepare request
 url = 'https://data-eu.mixpanel.com/api/2.0/export'  # Note: Using EU data location
@@ -52,7 +52,7 @@ def get_new_filename(base_name, file_number):
 print("\nProcessing and saving data...")
 event_count = 0
 filtered_count = 0
-file_number = 1
+file_number = 37
 events_per_file = 1000000
 current_file = None
 
